@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84549CBF158D7EA8009737D6 /* libProtocolBuffers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84549CB7158D751F009737D6 /* libProtocolBuffers.a */; };
+		84B1B978158B3C190061C6CF /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B1B976158B3C190061C6CF /* libzmq.a */; };
+		84B1B97E158B3EA10061C6CF /* libzmqobjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B1B97D158B3EA10061C6CF /* libzmqobjc.a */; };
+		84CDB3DD1571C7B7001B473D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CDB3DC1571C7B7001B473D /* UIKit.framework */; };
+		84CDB3DF1571C7B7001B473D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CDB3DE1571C7B7001B473D /* Foundation.framework */; };
+		84CDB3E11571C7B7001B473D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CDB3E01571C7B7001B473D /* CoreGraphics.framework */; };
+		84CDB3E71571C7B7001B473D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84CDB3E51571C7B7001B473D /* InfoPlist.strings */; };
+		84CDB3E91571C7B7001B473D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB3E81571C7B7001B473D /* main.m */; };
+		84CDB3ED1571C7B7001B473D /* RttGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB3EC1571C7B7001B473D /* RttGAppDelegate.m */; };
+		84CDB3F01571C7B7001B473D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CDB3EE1571C7B7001B473D /* MainStoryboard.storyboard */; };
+		84CDB3F31571C7B7001B473D /* RttGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CDB3F21571C7B7001B473D /* RttGViewController.m */; };
+		84CDB3FD1571F87E001B473D /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84CDB3FC1571F87E001B473D /* mapapi.bundle */; };
+		84CDB4051572107D001B473D /* inc in Resources */ = {isa = PBXBuildFile; fileRef = 84CDB4041572107D001B473D /* inc */; };
+		84CDB407157213D7001B473D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CDB406157213D7001B473D /* CoreLocation.framework */; };
+		84CDB409157213F4001B473D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CDB408157213F4001B473D /* QuartzCore.framework */; };
+		84EC06AB15901CC4003FD2C1 /* Tss.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC06AA15901CC4003FD2C1 /* Tss.pb.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84EC06AE15916898003FD2C1 /* RttGOprRcvTSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EC06AD15916898003FD2C1 /* RttGOprRcvTSS.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84549CB6158D751F009737D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7461B52E0F94FAF800A0C422;
+			remoteInfo = ProtocolBuffers;
+		};
+		84549CB8158D751F009737D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7401C1A80F950347006D8281;
+			remoteInfo = UnitTests;
+		};
+		84549CBA158D751F009737D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 748F14580FD75E3B000858A9;
+			remoteInfo = CommandLineTests;
+		};
+		84549CBC158D7545009737D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7461B52D0F94FAF800A0C422;
+			remoteInfo = ProtocolBuffers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84549C9D158D4BC3009737D6 /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zmq.h; path = ZMQ/zmq.h; sourceTree = "<group>"; };
+		84549C9E158D4BC3009737D6 /* ZMQContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMQContext.h; path = ZMQ/ZMQContext.h; sourceTree = "<group>"; };
+		84549C9F158D4BC3009737D6 /* ZMQObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMQObjC.h; path = ZMQ/ZMQObjC.h; sourceTree = "<group>"; };
+		84549CA0158D4BC3009737D6 /* ZMQSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMQSocket.h; path = ZMQ/ZMQSocket.h; sourceTree = "<group>"; };
+		84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuffers.xcodeproj; path = ProtocolBuffLib/ProtocolBuffers.xcodeproj; sourceTree = "<group>"; };
+		84B1B976158B3C190061C6CF /* libzmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzmq.a; sourceTree = "<group>"; };
+		84B1B97D158B3EA10061C6CF /* libzmqobjc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzmqobjc.a; path = "zmq-iphonesimulator/libzmqobjc.a"; sourceTree = "<group>"; };
+		84B1B980158B3F4F0061C6CF /* Tss.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tss.pb.h; path = TSSInterface/Tss.pb.h; sourceTree = "<group>"; };
+		84CDB3D81571C7B7001B473D /* RTTGUIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTTGUIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CDB3DC1571C7B7001B473D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84CDB3DE1571C7B7001B473D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84CDB3E01571C7B7001B473D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84CDB3E41571C7B7001B473D /* RTTGUIDE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RTTGUIDE-Info.plist"; sourceTree = "<group>"; };
+		84CDB3E61571C7B7001B473D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84CDB3E81571C7B7001B473D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CDB3EA1571C7B7001B473D /* RTTGUIDE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTTGUIDE-Prefix.pch"; sourceTree = "<group>"; };
+		84CDB3EB1571C7B7001B473D /* RttGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RttGAppDelegate.h; sourceTree = "<group>"; };
+		84CDB3EC1571C7B7001B473D /* RttGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RttGAppDelegate.m; sourceTree = "<group>"; };
+		84CDB3EF1571C7B7001B473D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84CDB3F11571C7B7001B473D /* RttGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RttGViewController.h; sourceTree = "<group>"; };
+		84CDB3F21571C7B7001B473D /* RttGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RttGViewController.m; sourceTree = "<group>"; };
+		84CDB3FC1571F87E001B473D /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapApi_Lib_iOS_1.2.0/mapapi.bundle; sourceTree = "<group>"; };
+		84CDB4041572107D001B473D /* inc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inc; path = BaiduMapApi_Lib_iOS_1.2.0/inc; sourceTree = "<group>"; };
+		84CDB406157213D7001B473D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84CDB408157213F4001B473D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84EC06AA15901CC4003FD2C1 /* Tss.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tss.pb.m; path = TSSInterface/Tss.pb.m; sourceTree = "<group>"; };
+		84EC06AC15916898003FD2C1 /* RttGOprRcvTSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RttGOprRcvTSS.h; sourceTree = "<group>"; };
+		84EC06AD15916898003FD2C1 /* RttGOprRcvTSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RttGOprRcvTSS.m; sourceTree = "<group>"; };
+		84EC06AF15917BEC003FD2C1 /* RttGTSSCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RttGTSSCommunication.h; sourceTree = "<group>"; };
+		84F1D2E81576218D00D5D2D3 /* RTTGUIDE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RTTGUIDE.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CDB3D51571C7B7001B473D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84549CBF158D7EA8009737D6 /* libProtocolBuffers.a in Frameworks */,
+				84CDB409157213F4001B473D /* QuartzCore.framework in Frameworks */,
+				84CDB407157213D7001B473D /* CoreLocation.framework in Frameworks */,
+				84CDB3DD1571C7B7001B473D /* UIKit.framework in Frameworks */,
+				84CDB3DF1571C7B7001B473D /* Foundation.framework in Frameworks */,
+				84CDB3E11571C7B7001B473D /* CoreGraphics.framework in Frameworks */,
+				84B1B978158B3C190061C6CF /* libzmq.a in Frameworks */,
+				84B1B97E158B3EA10061C6CF /* libzmqobjc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84549CAD158D751F009737D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84549CB7158D751F009737D6 /* libProtocolBuffers.a */,
+				84549CB9158D751F009737D6 /* UnitTests.octest */,
+				84549CBB158D751F009737D6 /* CommandLineTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B1B97F158B3F3F0061C6CF /* TSSInterface */ = {
+			isa = PBXGroup;
+			children = (
+				84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */,
+				84B1B980158B3F4F0061C6CF /* Tss.pb.h */,
+				84EC06AA15901CC4003FD2C1 /* Tss.pb.m */,
+			);
+			name = TSSInterface;
+			sourceTree = "<group>";
+		};
+		84CDB3CD1571C7B6001B473D = {
+			isa = PBXGroup;
+			children = (
+				84B1B97F158B3F3F0061C6CF /* TSSInterface */,
+				84CDB408157213F4001B473D /* QuartzCore.framework */,
+				84CDB406157213D7001B473D /* CoreLocation.framework */,
+				84CDB4041572107D001B473D /* inc */,
+				84CDB3E21571C7B7001B473D /* RTTGUIDE */,
+				84CDB3F91571CA39001B473D /* ZeroMQ */,
+				84CDB3DB1571C7B7001B473D /* Frameworks */,
+				84CDB3D91571C7B7001B473D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CDB3D91571C7B7001B473D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CDB3D81571C7B7001B473D /* RTTGUIDE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CDB3DB1571C7B7001B473D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CDB3FC1571F87E001B473D /* mapapi.bundle */,
+				84CDB3DC1571C7B7001B473D /* UIKit.framework */,
+				84CDB3DE1571C7B7001B473D /* Foundation.framework */,
+				84CDB3E01571C7B7001B473D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CDB3E21571C7B7001B473D /* RTTGUIDE */ = {
+			isa = PBXGroup;
+			children = (
+				84F1D2E81576218D00D5D2D3 /* RTTGUIDE.entitlements */,
+				84CDB3EB1571C7B7001B473D /* RttGAppDelegate.h */,
+				84CDB3EC1571C7B7001B473D /* RttGAppDelegate.m */,
+				84CDB3EE1571C7B7001B473D /* MainStoryboard.storyboard */,
+				84CDB3F11571C7B7001B473D /* RttGViewController.h */,
+				84CDB3F21571C7B7001B473D /* RttGViewController.m */,
+				84CDB3E31571C7B7001B473D /* Supporting Files */,
+				84EC06AC15916898003FD2C1 /* RttGOprRcvTSS.h */,
+				84EC06AF15917BEC003FD2C1 /* RttGTSSCommunication.h */,
+				84EC06AD15916898003FD2C1 /* RttGOprRcvTSS.m */,
+			);
+			path = RTTGUIDE;
+			sourceTree = "<group>";
+		};
+		84CDB3E31571C7B7001B473D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84CDB3E41571C7B7001B473D /* RTTGUIDE-Info.plist */,
+				84CDB3E51571C7B7001B473D /* InfoPlist.strings */,
+				84CDB3E81571C7B7001B473D /* main.m */,
+				84CDB3EA1571C7B7001B473D /* RTTGUIDE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CDB3F91571CA39001B473D /* ZeroMQ */ = {
+			isa = PBXGroup;
+			children = (
+				84549C9D158D4BC3009737D6 /* zmq.h */,
+				84549C9E158D4BC3009737D6 /* ZMQContext.h */,
+				84549C9F158D4BC3009737D6 /* ZMQObjC.h */,
+				84549CA0158D4BC3009737D6 /* ZMQSocket.h */,
+				84B1B97D158B3EA10061C6CF /* libzmqobjc.a */,
+				84B1B976158B3C190061C6CF /* libzmq.a */,
+			);
+			name = ZeroMQ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CDB3D71571C7B7001B473D /* RTTGUIDE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CDB3F61571C7B7001B473D /* Build configuration list for PBXNativeTarget "RTTGUIDE" */;
+			buildPhases = (
+				84CDB3D41571C7B7001B473D /* Sources */,
+				84CDB3D51571C7B7001B473D /* Frameworks */,
+				84CDB3D61571C7B7001B473D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84549CBD158D7545009737D6 /* PBXTargetDependency */,
+			);
+			name = RTTGUIDE;
+			productName = RTTGUIDE;
+			productReference = 84CDB3D81571C7B7001B473D /* RTTGUIDE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CDB3CF1571C7B6001B473D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RttG;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 84CDB3D21571C7B6001B473D /* Build configuration list for PBXProject "RTTGUIDE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84CDB3CD1571C7B6001B473D;
+			productRefGroup = 84CDB3D91571C7B7001B473D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84549CAD158D751F009737D6 /* Products */;
+					ProjectRef = 84549CAC158D751F009737D6 /* ProtocolBuffers.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84CDB3D71571C7B7001B473D /* RTTGUIDE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84549CB7158D751F009737D6 /* libProtocolBuffers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuffers.a;
+			remoteRef = 84549CB6158D751F009737D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84549CB9158D751F009737D6 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 84549CB8158D751F009737D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84549CBB158D751F009737D6 /* CommandLineTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CommandLineTests.app;
+			remoteRef = 84549CBA158D751F009737D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CDB3D61571C7B7001B473D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CDB3E71571C7B7001B473D /* InfoPlist.strings in Resources */,
+				84CDB3F01571C7B7001B473D /* MainStoryboard.storyboard in Resources */,
+				84CDB3FD1571F87E001B473D /* mapapi.bundle in Resources */,
+				84CDB4051572107D001B473D /* inc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CDB3D41571C7B7001B473D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CDB3E91571C7B7001B473D /* main.m in Sources */,
+				84CDB3ED1571C7B7001B473D /* RttGAppDelegate.m in Sources */,
+				84CDB3F31571C7B7001B473D /* RttGViewController.m in Sources */,
+				84EC06AB15901CC4003FD2C1 /* Tss.pb.m in Sources */,
+				84EC06AE15916898003FD2C1 /* RttGOprRcvTSS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84549CBD158D7545009737D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuffers;
+			targetProxy = 84549CBC158D7545009737D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CDB3E51571C7B7001B473D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CDB3E61571C7B7001B473D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84CDB3EE1571C7B7001B473D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CDB3EF1571C7B7001B473D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CDB3F41571C7B7001B473D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/inc";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/libs/Release$(EFFECTIVE_PLATFORM_NAME)";
+				OTHER_LDFLAGS = (
+					"-lbaidumapapi",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		84CDB3F51571C7B7001B473D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/inc";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/libs/Release$(EFFECTIVE_PLATFORM_NAME)";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lbaidumapapi",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CDB3F71571C7B7001B473D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ye Songhai (GF288FJ4ZZ)";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTTGUIDE/RTTGUIDE-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/inc",
+					"$(SRCROOT)/ProtocolBuffLib/Classes",
+				);
+				INFOPLIST_FILE = "RTTGUIDE/RTTGUIDE-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/libs/Release$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/zmq-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lbaidumapapi",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "885C7E87-A678-48F1-9033-5600F587D33A";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84CDB3F81571C7B7001B473D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ye Songhai (GF288FJ4ZZ)";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTTGUIDE/RTTGUIDE-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/inc",
+					"$(SRCROOT)/ProtocolBuffLib/Classes",
+				);
+				INFOPLIST_FILE = "RTTGUIDE/RTTGUIDE-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BaiduMapApi_Lib_iOS_1.2.0/libs/Release$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/zmq-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lbaidumapapi",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "885C7E87-A678-48F1-9033-5600F587D33A";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CDB3D21571C7B6001B473D /* Build configuration list for PBXProject "RTTGUIDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CDB3F41571C7B7001B473D /* Debug */,
+				84CDB3F51571C7B7001B473D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CDB3F61571C7B7001B473D /* Build configuration list for PBXNativeTarget "RTTGUIDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CDB3F71571C7B7001B473D /* Debug */,
+				84CDB3F81571C7B7001B473D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CDB3CF1571C7B6001B473D /* Project object */;
+}
